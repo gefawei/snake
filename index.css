@@ -1,0 +1,293 @@
+body,div,p,ul,li,a,span{margin:0;
+    padding:0;
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+/*场地*/
+#content{
+    width:1000px;
+    height:480px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    background-size:100% 100%;
+}
+.box{
+    width:10px;
+    height:10px;
+//background:#74B71B;
+    display:inline-block;
+    float: left;
+}
+#snake-box{
+    width:1280px;
+    overflow: hidden;
+    margin:0 auto;
+}
+#snake-head{
+    background: #000;
+    background: url(img/蛇头.jpg);
+    background-size:100% 100%;
+}
+/*食物*/
+span{
+    width:10px;
+    height:10px;
+    position:absolute;
+    background: #f00;
+    border-radius:10px;
+    display: block;
+}
+/*蛇身*/
+p{
+    width:10px;
+    height:10px;
+    position:absolute;
+    background: #f00;
+    border-radius:5px;
+}
+.snake_body{
+    width:10px;
+    height:10px;
+    //background: #FF0000;
+}
+/*蛇尾*/
+.snake_tail{
+    background: url(img/14.jpg);
+    background-size:100% 100%;
+}
+/*菜单*/
+.menu{
+    width:280px;
+    height:480px;
+    background: #333333;
+    overflow: hidden;
+    position: relative;
+}
+.menu_g{
+    width:260px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size:30px;
+    color:#fff;
+    font-weight: bold;
+    background: #2218DC;
+    margin:10px 10px;
+}
+/*开始*/
+.start{
+    width:120px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    color:#fff;
+    background:red;
+    margin:10px 10px;
+    float: left;
+}
+/*暂停*/
+.stop{
+    width:120px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    color:#fff;
+    background:#FF0000;
+    margin:10px 10px;
+    float: left;
+}
+/*场地换皮肤*/
+.box-skin{
+    position: relative;
+    width:120px;;
+    height:30px;
+    float: left;
+    margin:10px 10px;
+}
+.one{
+    width:120px;;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    font-size:20px;
+    color:#fff;
+    font-weight: bold;
+    background: #E8C99D;
+}
+.skin_ul{
+    width:120px;
+    overflow: hidden;
+    position: absolute;
+    top:30px;
+    left:0;
+    z-index: 10;
+    display: none;
+}
+.skin_ul li{
+    width:120px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    background: #E8C99D;
+    margin-top:1px;
+}
+.show:hover .skin_ul{
+    display: block;
+}
+
+/*切换背景类名*/
+.skin_li{
+    background: url(img/0.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+.skin_bj1{
+    background: url(img/1.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+.skin_bj2{
+    background: url(img/2.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+.skin_bj3{
+    background: url(img/5.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+/*食物换皮肤*/
+.food-skin{
+    position: relative;
+    width:120px;;
+    height:30px;
+    float: left;
+    margin:10px 10px;
+}
+.two{
+    width:120px;;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    font-size:20px;
+    color:#fff;
+    font-weight: bold;
+    background: #FFEE34;
+}
+.food_ul{
+    width:120px;
+    overflow: hidden;
+    position: absolute;
+    top:30px;
+    left:0;
+    z-index: 10;
+    display: none;
+}
+.food_ul li{
+    width:120px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    background: #FFEE34;
+    margin-top:1px;
+}
+.show:hover .food_ul{
+    display: block;
+}
+/*切换食物皮肤*/
+.food_li{
+    background: url(img/6.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+.food_bj1{
+    background: url(img/7.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+.food_bj2{
+    background: url(img/8.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+.food_bj3{
+    background: url(img/9.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+/*蛇身换皮肤*/
+.snake-skin{
+    position: relative;
+    width:120px;;
+    height:30px;
+    float: left;
+    margin:10px 10px;
+}
+.thre{
+    width:120px;;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    font-size:20px;
+    color:#fff;
+    font-weight: bold;
+    background: #477ED9;
+}
+.snake_ul{
+    width:120px;
+    overflow: hidden;
+    position: absolute;
+    top:30px;
+    left:0;
+    z-index: 10;
+    display: none;
+}
+.snake_ul li{
+    width:120px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    background: #477ED9;
+    margin-top:1px;
+}
+.show:hover .snake_ul{
+    display: block;
+}
+/*蛇身换皮肤*/
+.snake_li{
+    background: url(img/13.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+.snake_bj1{
+    background: url(img/10.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+.snake_bj2{
+    background: url(img/11.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+.snake_bj3{
+    background: url(img/12.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+
+/*对战*/
+.Pattern{
+    width:120px;;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    font-size:20px;
+    color:#fff;
+    font-weight: bold;
+    float: left;
+    background: #2218DC;
+    margin:10px 10px;
+}
+
